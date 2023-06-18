@@ -1,0 +1,14 @@
+footer{
+    background-color: $color-principal;
+    height: 220px;
+    width: 100%;
+    .elementosFoot{
+        @include flex(column,wrap,center,center,30px);
+        padding-top: 15px;
+        .elementoDeFooter{
+            @include flex(column,wrap,center,center,5px);
+            text-align: center;
+        }
+    }
+}
+

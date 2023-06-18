@@ -1,0 +1,12 @@
+    .galeria > .img {
+        border-radius: 8px;
+        width: 100%;
+        height: auto;
+        }
+    .galeria{
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+        gap: 20px;
+        padding: 20px;
+    }
+
