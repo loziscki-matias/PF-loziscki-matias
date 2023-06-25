@@ -1,6 +1,5 @@
 footer{
     background-color: $color-principal;
-    height: 220px;
     width: 100%;
     .elementosFoot{
         @include flex(column,wrap,center,center,30px);
@@ -12,7 +11,7 @@ footer{
                 padding-left: 50px;
                 padding-right: 50px;
                 strong{
-                    color: rgb(188, 105, 163);
+                    color: #CD9DBD;
                 }
             }
         }

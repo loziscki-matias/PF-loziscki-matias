@@ -1,63 +1,50 @@
 @media (min-width: 1024px) {
-/*Cambios en header*/
-    header {
-        height: 100px;
 
-        .logo {
-            display: flex;
-            align-items: start;
-            position: relative;
-            top: 25px;
-            left: 50px;
-        }
-
-        .letra-1 {
-            position: relative;
-            top: 3px;
-            left: 40px;
-        }
-
-        .navbar {
-            display: flex;
-            flex-direction: row;
-            list-style: none;
-            justify-content: end;
-            gap: 15px;
-            position: relative;
-            bottom: 15px;
-            right: 110px;
-        }
+    .logo {
+        align-content: flex-start;
+        position: relative;
+        width: 300px;
+        top: 30px;
+        left: 50px;
     }
-/*Cambios en main*/
 
-.img5{
-    height: 229.29px;
-}
-.img6{
-    height: 265.5px;
-}
-.img7{
-    height: 300.39px;
-}
+    .navbar {
+        width: 650px;
+        gap: 5px;
+        position: relative;
+        left: 370px;
+        bottom: 30px;
+    }
 
-/*Cambios en footer*/
+    .fondo-inicio{
+        height: 77.9vh;
+    }
+
+    .img5 {
+        height: 229.29px;
+    }
+
+    .img6 {
+        height: 265.5px;
+    }
+
+    .img7 {
+        height: 300.39px;
+    }
+
     footer {
-        background-color: #292525;
-        height: 115px;
 
         .elementosFoot {
             display: flex;
             flex-direction: row;
-            justify-content: space-evenly;
-            padding-top: 25px;
         }
 
         .elementoDeFooter {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: left;
-            gap: 10px;
+        width: 300px;
+
+            .nosotros-footer{
+
+            }
         }
     }
 
