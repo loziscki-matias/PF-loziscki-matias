@@ -32,6 +32,7 @@
         width: 100%;
         grid-area: formulario;
         @include grid(repeat(1,1fr),3,"h3""h4""formulario",center,center,30px);
+        justify-items: center;
         h3{
             grid-area: h3;
             text-align: center;
@@ -40,6 +41,8 @@
         h4{
             grid-area: h4;
             text-align: center;
+            padding-left: 90px;
+            padding-right: 90px;
             padding-bottom: 5px;
         }
         .formulario{
@@ -76,12 +79,17 @@
                 @extend .formFecha;
                 .inputMensaje{
                     width: 173px;
-                    height: 7px;
+                    height: 60px;
+                    text-align: start;
+                    padding-bottom: 25px;
                 }
             }
             .boton{
                 grid-area: boton;
                 color: rgb(62, 57, 57);
+                width: 60px;
+                display: flex;
+                justify-items: center;
             }
         }
     }

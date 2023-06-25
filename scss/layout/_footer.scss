@@ -8,6 +8,13 @@ footer{
         .elementoDeFooter{
             @include flex(column,wrap,center,center,5px);
             text-align: center;
+            .nosotros-footer{
+                padding-left: 50px;
+                padding-right: 50px;
+                strong{
+                    color: rgb(188, 105, 163);
+                }
+            }
         }
     }
 }

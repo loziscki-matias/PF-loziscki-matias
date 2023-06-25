@@ -3,10 +3,19 @@ h2{
     text-align: center;
     padding-top: 40px;
     padding-bottom: 40px;
+    font-size: 20px;
+}
+strong{
+    color: rgb(188, 105, 163);
 }
 .el-trabajo{
     text-align: center;
-    padding-bottom: 40px;
+    padding-bottom: 50px;
+    padding-left: 200px;
+    padding-right: 200px;
+    gap: 5px;
+    font-size: 14px;
+    color: black
 }
 .alan{
     @include flex(column,wrap,center,center,20px);

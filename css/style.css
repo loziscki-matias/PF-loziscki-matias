@@ -57,14 +57,18 @@ footer {
       align-items: center;
       gap: 5px;
       text-align: center; }
+      footer .elementosFoot .elementoDeFooter .nosotros-footer {
+        padding-left: 50px;
+        padding-right: 50px; }
+        footer .elementosFoot .elementoDeFooter .nosotros-footer strong {
+          color: #bc69a3; }
 
 .fondo-inicio {
   width: 100%; }
 
 .galeria > .img {
   border-radius: 8px;
-  width: 100%;
-  height: auto; }
+  width: 100%; }
 
 .galeria {
   display: grid;
@@ -117,7 +121,8 @@ footer {
     grid-template-areas: "h3" "h4" "formulario";
     justify-content: center;
     align-items: center;
-    gap: 30px; }
+    gap: 30px;
+    justify-items: center; }
     .mainFormulario .seccionFormulario h3 {
       grid-area: h3;
       text-align: center;
@@ -125,6 +130,8 @@ footer {
     .mainFormulario .seccionFormulario h4 {
       grid-area: h4;
       text-align: center;
+      padding-left: 90px;
+      padding-right: 90px;
       padding-bottom: 5px; }
     .mainFormulario .seccionFormulario .formulario {
       padding-bottom: 30px;
@@ -159,10 +166,15 @@ footer {
         grid-area: mensaje; }
         .mainFormulario .seccionFormulario .formulario .formMensaje .inputMensaje {
           width: 173px;
-          height: 7px; }
+          height: 60px;
+          text-align: start;
+          padding-bottom: 25px; }
       .mainFormulario .seccionFormulario .formulario .boton {
         grid-area: boton;
-        color: #3e3939; }
+        color: #3e3939;
+        width: 60px;
+        display: flex;
+        justify-items: center; }
 
 main {
   background-color: rgba(108, 105, 109, 0.47); }
@@ -178,7 +190,9 @@ main {
     main .agustina .opinion {
       text-align: center;
       color: #766773;
-      width: 400px; }
+      width: 400px;
+      padding-left: 70px;
+      padding-right: 70px; }
   main .carla {
     display: flex;
     flex-direction: column;
@@ -191,7 +205,9 @@ main {
     main .carla .opinion {
       text-align: center;
       color: #766773;
-      width: 400px; }
+      width: 400px;
+      padding-left: 70px;
+      padding-right: 70px; }
   main .luciano {
     display: flex;
     flex-direction: column;
@@ -204,7 +220,9 @@ main {
     main .luciano .opinion {
       text-align: center;
       color: #766773;
-      width: 400px; }
+      width: 400px;
+      padding-left: 70px;
+      padding-right: 70px; }
   main .elizabeth {
     display: flex;
     flex-direction: column;
@@ -217,7 +235,9 @@ main {
     main .elizabeth .opinion {
       text-align: center;
       color: #766773;
-      width: 400px; }
+      width: 400px;
+      padding-left: 70px;
+      padding-right: 70px; }
   main .ximena {
     display: flex;
     flex-direction: column;
@@ -230,7 +250,9 @@ main {
     main .ximena .opinion {
       text-align: center;
       color: #766773;
-      width: 400px; }
+      width: 400px;
+      padding-left: 60px;
+      padding-right: 60px; }
   main .gabriel {
     display: flex;
     flex-direction: column;
@@ -243,17 +265,28 @@ main {
     main .gabriel .opinion {
       text-align: center;
       color: #766773;
-      width: 400px; }
+      width: 400px;
+      padding-left: 70px;
+      padding-right: 70px; }
 
 h2 {
   color: #766773;
   text-align: center;
   padding-top: 40px;
-  padding-bottom: 40px; }
+  padding-bottom: 40px;
+  font-size: 20px; }
+
+strong {
+  color: #bc69a3; }
 
 .el-trabajo {
   text-align: center;
-  padding-bottom: 40px; }
+  padding-bottom: 50px;
+  padding-left: 200px;
+  padding-right: 200px;
+  gap: 5px;
+  font-size: 14px;
+  color: black; }
 
 .alan {
   display: flex;
@@ -341,13 +374,14 @@ h2 {
   padding-bottom: 20px; }
 
 @media (min-width: 768px) {
-  /*.galeria {
-        grid-template-columns: repeat(2,1fr);
-    }
-    .img {
-        width: 320px;
-        height: 200px;
-    }*/
+  .img1 {
+    height: 257.94px; }
+  .img2 {
+    height: 265.5px; }
+  .img3 {
+    height: 300.4px; }
+  .img4 {
+    height: 472px; }
   .contenedorMapa {
     max-width: 75%; }
   .mapa {
@@ -360,43 +394,36 @@ h2 {
     grid-template-areas: "fecha lugar" "cantidad tipo" "numero email" "mensaje boton";
     justify-content: center;
     align-items: center;
-    gap: 10px; } }
-
-.mainFormulario .seccionFormulario .formulario .formFecha, .mainFormulario .seccionFormulario .formulario .formLugar, .mainFormulario .seccionFormulario .formulario .formPersonas, .mainFormulario .seccionFormulario .formulario .formTipoEvento, .mainFormulario .seccionFormulario .formulario .formContacto, .mainFormulario .seccionFormulario .formulario .formMail, .mainFormulario .seccionFormulario .formulario .formMensaje {
-  grid-area: fecha; }
-
-.mainFormulario .seccionFormulario .formulario .formLugar {
-  grid-area: lugar; }
-
-.mainFormulario .seccionFormulario .formulario .formPersonas {
-  grid-area: cantidad; }
-
-.mainFormulario .seccionFormulario .formulario .formTipoEvento {
-  grid-area: tipo; }
-
-.mainFormulario .seccionFormulario .formulario .formContacto {
-  grid-area: numero; }
-
-.mainFormulario .seccionFormulario .formulario .formMail {
-  grid-area: email; }
-
-.mainFormulario .seccionFormulario .formulario .formMensaje {
-  grid-area: mensaje; }
-
-.mainFormulario .seccionFormulario .formulario .boton {
-  grid-area: boton; }
-
-.videos {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-items: center;
-  gap: 10px;
-  position: relative;
-  right: 20px; }
+    justify-items: center;
+    gap: 10px; }
+  .mainFormulario .seccionFormulario .formulario .formFecha, .mainFormulario .seccionFormulario .formulario .formLugar, .mainFormulario .seccionFormulario .formulario .formPersonas, .mainFormulario .seccionFormulario .formulario .formTipoEvento, .mainFormulario .seccionFormulario .formulario .formContacto, .mainFormulario .seccionFormulario .formulario .formMail, .mainFormulario .seccionFormulario .formulario .formMensaje {
+    grid-area: fecha; }
+  .mainFormulario .seccionFormulario .formulario .formLugar {
+    grid-area: lugar; }
+  .mainFormulario .seccionFormulario .formulario .formPersonas {
+    grid-area: cantidad; }
+  .mainFormulario .seccionFormulario .formulario .formTipoEvento {
+    grid-area: tipo; }
+  .mainFormulario .seccionFormulario .formulario .formContacto {
+    grid-area: numero; }
+  .mainFormulario .seccionFormulario .formulario .formMail {
+    grid-area: email; }
+  .mainFormulario .seccionFormulario .formulario .formMensaje {
+    grid-area: mensaje; }
+  .mainFormulario .seccionFormulario .formulario .boton {
+    grid-area: boton; }
+  .videos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+    right: 20px; } }
 
 @media (min-width: 1024px) {
+  /*Cambios en header*/
   header {
     height: 100px; }
     header .logo {
@@ -418,6 +445,14 @@ h2 {
       position: relative;
       bottom: 15px;
       right: 110px; }
+  /*Cambios en main*/
+  .img5 {
+    height: 229.29px; }
+  .img6 {
+    height: 265.5px; }
+  .img7 {
+    height: 300.39px; }
+  /*Cambios en footer*/
   footer {
     background-color: #292525;
     height: 115px; }
@@ -432,10 +467,6 @@ h2 {
       align-items: center;
       text-align: left;
       gap: 10px; }
-  /*.cambioImagen1 {
-            width: 512px;
-            height: 288px;
-        }*/
   .agusYcarla, .luYeli, .ximeYgaby {
     display: flex;
     flex-direction: row;
@@ -447,11 +478,9 @@ h2 {
   .navbar {
     position: relative;
     right: 0px; }
-  /*.galeria{
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-        }
-        .cambioImagen2{
-            width: 360px;
-            height: 288px;
-        }*/ }
+  .img7 {
+    height: 352px; }
+  .img8 {
+    height: 265.5px; }
+  .boton {
+    margin: 10px; } }
